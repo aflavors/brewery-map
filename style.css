@@ -56,3 +56,9 @@ padding-right:30px;
 .hide {
     visibility: hidden;
 }
+#brewery-map-logo{
+    text-align: center;
+    width: 222px;
+    height: 197px;
+    margin: 10px auto;
+}
