@@ -1,8 +1,6 @@
 # Brewery Map
 
-Brewery map is an application that maps breweries by specific locations entered by the end user. Users can search by zip code and be presented with a list of local breweries to visit.
-
-[GitHub Pages Link](https://kvrivas854.github.io/brewery-map/)
+[Brewery map](https://www.akeemflavors.com/brewery-map/) is an application that maps breweries by specific locations entered by the end user. Users can search by zip code and be presented with a list of local breweries to visit.
 
 ## Table of Contents
 - [Overview](#Overview)
@@ -45,4 +43,6 @@ JavaScript
 - The JavaScript is linked using an external script and utilizes the [Leaflet](https://leafletjs.com/), [LocationIQ](https://locationiq.com/), and [Open Brewery DB](https://www.openbrewerydb.org/) APIs.
 
 ### Credits
-Brewery Map was created by @kvrivas854, @sarahshea12, @jsuderman, and @aflavors. Feel free to contact us! :v:
+Brewery Map was initially created by @kvrivas854, @sarahshea12, @jsuderman, and @aflavors.[See Repsitory](https://github.com/kvrivas854/brewery-map)
+This version has an updated layout and logo created by @aflavors.
+Feel free to contact me! :v:
