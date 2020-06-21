@@ -58,7 +58,11 @@ padding-right:30px;
 }
 #brewery-map-logo{
     text-align: center;
-    width: 222px;
-    height: 197px;
-    margin: 10px auto;
+    margin: 10pxauto;
+}
+#map-placeholder{
+    opacity: 0.2;
+}
+#map-placeholder:hover{
+    opacity: 1.0;
 }

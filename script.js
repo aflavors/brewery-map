@@ -17,6 +17,7 @@ $(document).ready(
   // Search button click event
 $("#search-button").on("click", function (e) {
   e.preventDefault()
+  $("#map-placeholder").hide()
   $('html, body').animate({
     scrollTop: $("#search-results").offset().top
 }, 2000);

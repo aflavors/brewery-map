@@ -22,84 +22,53 @@
     <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
- 
-
-<!--Header-->
-<div id="brewery-map-logo">
-  <img src="./assets/images/brewery-map-logo.svg" alt="" width="222" height="197" >
-</div>
-  
-
-  <!--Menu Nav Bar-->
-    <div class="ui secondary vertical pointing menu">
-        <a class="active item" data-tab="home">Search</a>
-        <a class="item" data-tab="about">About</a>
-        <a class="item" data-tab="contact">Contact</a>
+  <div class="ui bottom attached active tab segment" data-tab="home">
+    <div class="ui grid container">
+      <div class="row">
+        <div class="three wide column" id="three-column">
+          <!--Logo-->
+          <div id="brewery-map-logo">
+            <img src="./assets/images/brewery-map-logo.svg" alt="">
+          </div>
+          <!--Search-->
+          <form class="ui form">
+            <div class="field">
+              <label>Search by Zip Code</label>
+              <input style="width: 167px" name="zip-code" placeholder="Zip Code" id="zipcode-input">
+            </div>
+            <button class="ui black button" type="submit" id="search-button">Search</button>
+            <button class="ui black button">Clear</button>
+          </form>
+        </div>
+        <div class="thirteen wide column" id="thirteen-column">
+          <!--Map-->
+          <div id="map-placeholder" style="height: 600px;">
+            <img src="./assets/images/brewery-map-placeholder.svg" alt="">
+          </div>
+          <div id="mapid" style="height: 600px;"></div>
+        </div>
       </div>
+      <div class="row">
+        <div class="sixteen wide column">
+          <div id="search-results" class="ui cards"></div>
+        </div>
+      </div>
+    </div>
+ </div>
+
+
+
+
+
       <div class="ui bottom attached active tab segment" data-tab="home">
         <div class="ui grid container">
-            <div class="row">
+            
           
             <div class="three wide column" id="three-column">
             
                <!--Search Form-->
             
              <form class="ui form" style="height: 600px;">
-                <div class="ui floating dropdown labeled icon button">
-                    <i class="filter icon"></i>
-                    <span class="text">Filter Posts</span>
-                    <div class="menu">
-                      <div class="ui icon search input">
-                        <i class="search icon"></i>
-                        <input type="text" placeholder="Select filter...">
-                      </div>
-                      <div class="divider"></div>
-                      <div class="header">
-                        <i class="tags icon"></i>
-                        Choose:
-                      </div>
-                      <div class="scrollingMenu">
-                        <div class="item">
-                          <div class="ui red empty circular label"></div>
-                          Pet Friendly
-                        </div>
-                        <div class="item">
-                          <div class="ui blue empty circular label"></div>
-                          Food Truck
-                        </div>
-                        <div class="item">
-                          <div class="ui black empty circular label"></div>
-                          Food Service
-                        </div>
-                        <div class="item">
-                          <div class="ui green empty circular label"></div>
-                          Tours
-                        </div>
-                        <div class="item">
-                          <div class="ui purple empty circular label"></div>
-                          Patio Seating
-                        </div>
-                        <div class="item">
-                          <div class="ui orange empty circular label"></div>
-                          Micro
-                        </div>
-                        <div class="item">
-                          <div class="ui yellow empty circular label"></div>
-                          Regional
-                        </div>
-                        <div class="item">
-                          <div class="ui pink empty circular label"></div>
-                          Brew pub
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-               <div class="field">
-                 <label>Search by Zip Code</label>
-                 <input style="width: 167px" name="zip-code" placeholder="Zip Code" id="zipcode-input">
-               </div>
-               <button class="ui black button" type="submit" id="search-button">Search</button>
-               <button class="ui black button">Clear</button>
                <div class="field hide">
                 <label>Search by City</label>
                <input type="text" name="first-name" placeholder="City" id="city-input">
@@ -163,6 +132,7 @@
             </div> 
          </form>
         </div> 
+      <div class="row">
         <div class="thirteen wide column" id="thirteen-column">
           <!--Map-->
           <div id="mapid" style="height: 600px;"></div>
